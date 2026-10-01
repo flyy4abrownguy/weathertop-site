@@ -1,0 +1,43 @@
+name: Support request
+description: Get help with WeatherTop
+title: "[Support] "
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using WeatherTop. Requests here are public, so please don't include personal information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's happening?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 26.1
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model and number of displays
+      placeholder: e.g. MacBook Pro 14-inch, one external display
+  - type: dropdown
+    id: weather
+    attributes:
+      label: Which weather were you using?
+      options:
+        - Not sure / any
+        - Drizzle
+        - Rain
+        - Thunderstorm
+        - Sleet
+        - Hail
+        - Snow
+        - Blizzard
+        - Fog
+        - Sandstorm
+        - Autumn Leaves
+        - Cherry Blossoms
